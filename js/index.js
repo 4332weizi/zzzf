@@ -5,13 +5,14 @@ mAMap.setCenter([113.68, 34.755]);
 var mMarkerGroup = {
     gschool: [],
     ghospital: [],
-    gmetro: []
+    gmetro: [],
+    gsupermarket: []
 };
 
 var mSchoolDatas = initSchools();
 var mHospitalDatas = initHospitals();
 var mMetroDatas = initMetros();
-// var supermarkets = initSupermarkets();
+var mSupermarketDatas = initSupermarkets();
 
 var addPoint = function (data, config) {
     var div = document.createElement('div');
@@ -63,6 +64,7 @@ function loadData(type, markergroup, datas) {
 loadData('school', mMarkerGroup.gschool, mSchoolDatas);
 loadData('hospital', mMarkerGroup.ghospital, mHospitalDatas);
 loadData('metro', mMarkerGroup.gmetro, mMetroDatas);
+loadData('supermarket', mMarkerGroup.gsupermarket, mSupermarketDatas);
 
 (function ($, undefined) {
 

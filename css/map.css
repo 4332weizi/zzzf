@@ -44,3 +44,15 @@
     color: white;
     background-color: fuchsia;
 }
+
+.supermarket {
+    width: 14px;
+    height: 14px;
+    border-radius: 6px;
+    border: solid 1px silver;
+    padding: 2px;
+    text-align: center;
+    font-size: 0.5em;
+    color: white;
+    background-color: fuchsia;
+}
