@@ -108,7 +108,7 @@ function initSchools() {
             config: {
                 divName: 'school',
                 circleColor: 'blue',
-                circleRadius: 2000,
+                circleRadius: 1000,
                 title: '小'
             },
             datas: [

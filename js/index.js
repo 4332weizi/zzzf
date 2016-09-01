@@ -4,15 +4,16 @@ mAMap.setCenter([113.68, 34.755]);
 
 var mMarkerGroup = {
     gschool: [],
-    ghospital: []
+    ghospital: [],
+    gmetro: []
 };
 
 var mSchoolDatas = initSchools();
 var mHospitalDatas = initHospitals();
-// var metroStations = initMetroStations();
+var mMetroDatas = initMetros();
 // var supermarkets = initSupermarkets();
 
-var addData = function (data, config) {
+var addPoint = function (data, config) {
     var div = document.createElement('div');
     div.className = config.divName;
     div.innerHTML = config.title;
@@ -45,29 +46,23 @@ var addData = function (data, config) {
     };
 };
 
-var container = document.createElement('div');
-container.className = 'data-group-schools';
-container.innerHTML = '';
-for (var i = 0; i < mSchoolDatas.length; i++) {
-    container.innerHTML += "<p><input class=\"checkbox\" checked type=\"checkbox\" value=\"gschool-" + i + "\"/>" + mSchoolDatas[i].title + "</p>";
-    mMarkerGroup.gschool.push(new Array());
-    for (var j = 0; j < mSchoolDatas[i].datas.length; j++) {
-        mMarkerGroup.gschool[i].push(addData(mSchoolDatas[i].datas[j], mSchoolDatas[i].config));
+function loadData(type, markergroup, datas) {
+    var container = document.createElement('div');
+    container.className = 'data-group-' + type + 's';
+    container.innerHTML = '';
+    for (var i = 0; i < datas.length; i++) {
+        container.innerHTML += "<p><input class=\"checkbox\" checked type=\"checkbox\" value=\"g" + type + "-" + i + "\"/>" + datas[i].title + "</p>";
+        markergroup.push(new Array());
+        for (var j = 0; j < datas[i].datas.length; j++) {
+            markergroup[i].push(addPoint(datas[i].datas[j], datas[i].config));
+        }
     }
+    $("#nav").append(container);
 }
-$("#nav").append(container);
 
-container = document.createElement('div');
-container.className = 'data-group-hospitals';
-container.innerHTML = '';
-for (var i = 0; i < mHospitalDatas.length; i++) {
-    container.innerHTML += "<p><input class=\"checkbox\" checked type=\"checkbox\" value=\"ghospital-" + i + "\"/>" + mHospitalDatas[i].title + "</p>";
-    mMarkerGroup.ghospital.push(new Array());
-    for (var j = 0; j < mHospitalDatas[i].datas.length; j++) {
-        mMarkerGroup.ghospital[i].push(addData(mHospitalDatas[i].datas[j], mHospitalDatas[i].config));
-    }
-}
-$("#nav").append(container);
+loadData('school', mMarkerGroup.gschool, mSchoolDatas);
+loadData('hospital', mMarkerGroup.ghospital, mHospitalDatas);
+loadData('metro', mMarkerGroup.gmetro, mMetroDatas);
 
 (function ($, undefined) {
 
