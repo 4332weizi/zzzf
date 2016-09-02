@@ -50,7 +50,7 @@ var addPoint = function (data, config) {
 function loadData(type, name, markergroup, datas) {
     var container = document.createElement('div');
     container.className = 'data-group-' + type + 's';
-    container.innerHTML = '<p class="group-title">' + name + '</p>';
+    container.innerHTML = "<p class='group-title'>" + name + "<a class='link-view-all' href='./datas.html?type=" + type + "'>查看数据</a></p>";
     for (var i = 0; i < datas.length; i++) {
         container.innerHTML += "<p>" +
             "<input class='checkbox' checked type='checkbox' value='g" + type + "-" + i + "'/>" + datas[i].title +
