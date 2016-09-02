@@ -2,7 +2,7 @@ body.nav-opened .nav-cover {
     position: fixed;
     top: 0;
     left: 0;
-    right: 240px;
+    right: 420px;
     bottom: 0;
     z-index: 200;
 }
@@ -13,7 +13,7 @@ body.nav-opened .nav-cover {
     right: 0;
     bottom: 0;
     z-index: 5;
-    width: 240px;
+    width: 420px;
     opacity: 0;
     background: #111;
     margin-bottom: 0;

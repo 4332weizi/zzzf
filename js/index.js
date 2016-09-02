@@ -47,12 +47,15 @@ var addPoint = function (data, config) {
     };
 };
 
-function loadData(type, markergroup, datas) {
+function loadData(type, name, markergroup, datas) {
     var container = document.createElement('div');
     container.className = 'data-group-' + type + 's';
-    container.innerHTML = '';
+    container.innerHTML = '<p class="group-title">' + name + '</p>';
     for (var i = 0; i < datas.length; i++) {
-        container.innerHTML += "<p><input class=\"checkbox\" checked type=\"checkbox\" value=\"g" + type + "-" + i + "\"/>" + datas[i].title + "</p>";
+        container.innerHTML += "<p>" +
+            "<input class='checkbox' checked type='checkbox' value='g" + type + "-" + i + "'/>" + datas[i].title +
+            "<input class='circleRadius' id=g" + type + "-" + i + "-" + j + " type='number' min='100' step='100' value='" + datas[i].config.circleRadius + "'/>" + "米" +
+            "</p>";
         markergroup.push(new Array());
         for (var j = 0; j < datas[i].datas.length; j++) {
             markergroup[i].push(addPoint(datas[i].datas[j], datas[i].config));
@@ -61,10 +64,10 @@ function loadData(type, markergroup, datas) {
     $("#nav").append(container);
 }
 
-loadData('school', mMarkerGroup.gschool, mSchoolDatas);
-loadData('hospital', mMarkerGroup.ghospital, mHospitalDatas);
-loadData('metro', mMarkerGroup.gmetro, mMetroDatas);
-loadData('supermarket', mMarkerGroup.gsupermarket, mSupermarketDatas);
+loadData('school', '教育', mMarkerGroup.gschool, mSchoolDatas);
+loadData('hospital', '医疗', mMarkerGroup.ghospital, mHospitalDatas);
+loadData('metro', '交通', mMarkerGroup.gmetro, mMetroDatas);
+loadData('supermarket', '购物', mMarkerGroup.gsupermarket, mSupermarketDatas);
 
 (function ($, undefined) {
 
@@ -89,6 +92,15 @@ loadData('supermarket', mMarkerGroup.gsupermarket, mSupermarketDatas);
                     mAMap.remove(datas[i].marker);
                     mAMap.remove(datas[i].circle);
                 }
+            }
+        });
+
+        $(".nav .circleRadius").on('input', function () {
+            var id = $(this).prop('id');
+            var datas = mMarkerGroup[id.split('-')[0]][id.split('-')[1]];
+            var radius = $(this).prop('value');
+            for (var i = 0; i < datas.length; i++) {
+                datas[i].circle.setOptions({'radius': radius});
             }
         });
 
