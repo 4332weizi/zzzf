@@ -88,7 +88,7 @@ function initMetros() {
             ]
         },
         {
-            title: "1号线(二期)",
+            title: "1号线(二期，2017年春节前试运营)",
             config: {
                 divName: 'metro',
                 circleColor: 'fuchsia',
@@ -214,7 +214,7 @@ function initMetros() {
             ]
         },
         {
-            title: "5号线",
+            title: "5号线（2019年12月底前试运营）",
             config: {
                 divName: 'metro',
                 circleColor: 'fuchsia',
@@ -270,8 +270,9 @@ function initMetros() {
                 "name": "月季公园",
                 "position": [113.62273199999998, 34.765735]
             }]
-        }, {
-            title: "2号线（南延段）",
+        },
+        {
+            title: "2号线（南延段，2020年7月底试运营）",
             config: {
                 divName: 'metro',
                 circleColor: 'fuchsia',
@@ -300,8 +301,9 @@ function initMetros() {
                 "name": "十八里河",
                 "position": [113.682075, 34.647754]
             }, {"name": "南四环", "position": [113.68189799999999, 34.662762]}]
-        }, {
-            title: "3号线（预测）",
+        },
+        {
+            title: "3号线（预测，2020年12月底试运营）",
             config: {
                 divName: 'metro',
                 circleColor: 'fuchsia',
@@ -371,8 +373,9 @@ function initMetros() {
                     "position": [113.805269,34.728451]
                 }
             ]
-        },{
-            title: "4号线（预测）",
+        },
+        {
+            title: "4号线（预测，2020年12月底前试运营）",
             config: {
                 divName: 'metro',
                 circleColor: 'fuchsia',
@@ -451,8 +454,9 @@ function initMetros() {
                     "position": [113.734044,34.690183]
                 }
             ]
-        },{
-            title: "6号线（预测）",
+        },
+        {
+            title: "6号线（预测，2020年12月底试运营）",
             config: {
                 divName: 'metro',
                 circleColor: 'fuchsia',
@@ -537,8 +541,9 @@ function initMetros() {
                     "position": [113.464354,34.683398]
                 }
             ]
-        },{
-            title: "7号线（预测，市区部分）",
+        },
+        {
+            title: "7号线（预测，市区部分，2022年12月底前试运营）",
             config: {
                 divName: 'metro',
                 circleColor: 'fuchsia',
@@ -609,6 +614,185 @@ function initMetros() {
                 }
             ]
         },
-
+        {
+            title: "8号线（预测，市区部分，2021年12月底前试运营）",
+            config: {
+                divName: 'metro',
+                circleColor: 'fuchsia',
+                circleRadius: 1000,
+                title: '地'
+            },
+            datas: [
+                {
+                    "name": "郑州轻工业学院",
+                    "position": [113.514114,34.807595]
+                },                {
+                    "name": "郑州大学",
+                    "position": [113.541623,34.807595]
+                }, {
+                    "name": "丁香里",
+                    "position": [113.558488,34.807666]
+                }, {
+                    "name": "郑州美术馆",
+                    "position": [113.568616,34.797975]
+                }, {
+                    "name": "老俩河",
+                    "position": [113.586255,34.793799]
+                }, {
+                    "name": "大学科技园",
+                    "position": [113.605395,34.792671]
+                }, {
+                    "name": "同乐",
+                    "position": [113.635607,34.795632]
+                }, {
+                    "name": "绿荫公园",
+                    "position": [113.648053,34.799226]
+                }, {
+                    "name": "白庙",
+                    "position": [113.665906,34.799367]
+                }, {
+                    "name": "东风路",
+                    "position": [113.681698,34.796548]
+                }, {
+                    "name": "枣庄",
+                    "position": [113.693243,34.794856]
+                },{
+                    "name": "小营",
+                    "position": [113.716074,34.790874]
+                }, {
+                    "name": "春意桥",
+                    "position": [113.735171,34.788512]
+                }, {
+                    "name": "陈岗",
+                    "position": [113.754268,34.785798]
+                }, {
+                    "name": "庙张",
+                    "position": [113.77328,34.782944]
+                }, {
+                    "name": "郑州东站",
+                    "position": [113.773537,34.759183]
+                }, {
+                    "name": "莆田营",
+                    "position": [113.792549,34.742188]
+                }
+            ]
+        },
+        {
+            title: "9号线（预测，市区部分，2021年12月底前试运营）",
+            config: {
+                divName: 'metro',
+                circleColor: 'fuchsia',
+                circleRadius: 1000,
+                title: '地'
+            },
+            datas: [
+                {
+                    "name": "大师姑",
+                    "position": [113.494942,34.844427]
+                },                {
+                    "name": "西连河",
+                    "position": [113.507302,34.837594]
+                }, {
+                    "name": "沟赵",
+                    "position": [113.522236,34.827871]
+                }, {
+                    "name": "河南工业大学",
+                    "position": [113.542493,34.827167]
+                }, {
+                    "name": "东史马",
+                    "position": [113.557513,34.827026]
+                }, {
+                    "name": "石佛",
+                    "position": [113.578284,34.81695]
+                }, {
+                    "name": "电厂南路",
+                    "position": [113.606565,34.801164]
+                }, {
+                    "name": "大学科技园",
+                    "position": [113.604505,34.792002]
+                }, {
+                    "name": "冉屯路",
+                    "position": [113.601501,34.778044]
+                }, {
+                    "name": "冉屯东路",
+                    "position": [113.608453,34.769337]
+                }, {
+                    "name": "月季公园",
+                    "position": [113.622787,34.765776]
+                },{
+                    "name": "碧沙岗",
+                    "position": [113.624375,34.754988]
+                }, {
+                    "name": "绿城广场",
+                    "position": [113.633559,34.74723]
+                }, {
+                    "name": "隋河宋肆",
+                    "position": [113.628688,34.736316]
+                }, {
+                    "name": "嵩淮",
+                    "position": [113.628173,34.728821]
+                }, {
+                    "name": "齐礼闫",
+                    "position": [113.628152,34.720321]
+                }, {
+                    "name": "黄岗寺北",
+                    "position": [113.628066,34.709879]
+                }, {
+                    "name": "黄岗寺",
+                    "position": [113.628924,34.697689]
+                }, {
+                    "name": "贾咀",
+                    "position": [113.628152,34.674064]
+                }, {
+                    "name": "铁三官庙",
+                    "position": [113.643901,34.658551]
+                }, {
+                    "name": "青天芦",
+                    "position": [113.666046,34.659204]
+                }, {
+                    "name": "十八里河",
+                    "position": [113.682225,34.647695]
+                }
+            ]
+        },
+        {
+            title: "10号线（预测，市区部分，2020年12月底前试运营）",
+            config: {
+                divName: 'metro',
+                circleColor: 'fuchsia',
+                circleRadius: 1000,
+                title: '地'
+            },
+            datas: [
+                {
+                    "name": "新田大道北",
+                    "position": [113.505242,34.748394]
+                },                {
+                    "name": "市民广场",
+                    "position": [113.540272,34.747557]
+                }, {
+                    "name": "郑州一中",
+                    "position": [113.558103,34.747468]
+                }, {
+                    "name": "杏树湾",
+                    "position": [113.578423,34.747363]
+                }, {
+                    "name": "罗庄",
+                    "position": [113.595021,34.747601]
+                }, {
+                    "name": "市中心医院",
+                    "position": [113.613462,34.747422]
+                }, {
+                    "name": "绿城广场",
+                    "position": [113.632924,34.747422]
+                }, {
+                    "name": "医学院",
+                    "position": [113.642794,34.747369]
+                }, {
+                    "name": "郑州火车站",
+                    "position": [113.656227,34.74654]
+                }
+            ]
+        },
     ];
 }
