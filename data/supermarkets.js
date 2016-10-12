@@ -4,7 +4,7 @@ function initSupermarkets() {
             title: "家乐福",
             config: {
                 divName: 'supermarket',
-                circleColor: 'fuchsia',
+                circleColor: 'Blue',
                 circleRadius: 3000,
                 title: '超'
             },
@@ -27,7 +27,7 @@ function initSupermarkets() {
             title: "万达广场",
             config: {
                 divName: 'supermarket',
-                circleColor: 'fuchsia',
+                circleColor: 'Blue',
                 circleRadius: 5000,
                 title: '商'
             },
@@ -51,7 +51,7 @@ function initSupermarkets() {
             title: "沃尔玛",
             config: {
                 divName: 'supermarket',
-                circleColor: 'fuchsia',
+                circleColor: 'Blue',
                 circleRadius: 3000,
                 title: '超'
             },
@@ -75,7 +75,7 @@ function initSupermarkets() {
             title: "丹尼斯",
             config: {
                 divName: 'supermarket',
-                circleColor: 'fuchsia',
+                circleColor: 'Blue',
                 circleRadius: 3000,
                 title: '超'
             },
@@ -122,7 +122,7 @@ function initSupermarkets() {
             title: "王府井百货",
             config: {
                 divName: 'supermarket',
-                circleColor: 'fuchsia',
+                circleColor: 'Blue',
                 circleRadius: 5000,
                 title: '商'
             },
@@ -146,7 +146,7 @@ function initSupermarkets() {
             title: "锦艺城购物中心",
             config: {
                 divName: 'supermarket',
-                circleColor: 'fuchsia',
+                circleColor: 'Blue',
                 circleRadius: 5000,
                 title: '商'
             },
@@ -161,7 +161,7 @@ function initSupermarkets() {
             title: "曼哈顿商业广场",
             config: {
                 divName: 'supermarket',
-                circleColor: 'fuchsia',
+                circleColor: 'Blue',
                 circleRadius: 5000,
                 title: '商'
             },
@@ -176,7 +176,7 @@ function initSupermarkets() {
             title: "郑州国贸360广场",
             config: {
                 divName: 'supermarket',
-                circleColor: 'fuchsia',
+                circleColor: 'Blue',
                 circleRadius: 5000,
                 title: '商'
             },
